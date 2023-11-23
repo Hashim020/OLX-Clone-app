@@ -1,0 +1,62 @@
+/* Parent container for the entire view */
+/* Parent container for the entire view with top margin */
+.viewParentDiv {
+  padding: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* Container for the image section */
+.viewParentDiv .imageShowDiv {
+  padding: 16px;
+  flex: 1; /* Use flex to distribute space */
+}
+
+/* Image styling */
+.viewParentDiv .imageShowDiv img {
+  width: 100%;
+  max-height: 85vh; /* Ensure the image fits within the viewport */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border: 1px solid #e0e0e0; /* Add a subtle border */
+  border-radius: 8px;
+}
+
+/* Container for the right section (product details and contact details) */
+.viewParentDiv .rightSection {
+  padding: 16px;
+  flex: 1; /* Use flex to distribute space */
+  margin-left: 2em; /* Add space between sections */
+}
+
+/* Product details section */
+.viewParentDiv .rightSection .productDetails {
+  border: 1px solid #e0e0e0; /* Add a border with a lighter color */
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.viewParentDiv .rightSection .productDetails h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #002f34;
+  margin-bottom: 20px;
+  line-height: 1.2; /* Improved line height for readability */
+}
+
+/* Contact details section */
+.viewParentDiv .rightSection .contactDetails {
+  border: 1px solid #e0e0e0; /* Add a border with a lighter color */
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.viewParentDiv .rightSection .contactDetails h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002f34;
+  margin-bottom: 16px;
+  line-height: 1.2; /* Improved line height for readability */
+}

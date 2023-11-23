@@ -1,0 +1,50 @@
+.bannerParentDiv {
+  padding-top: 4em;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.bannerParentDiv .bannerChildDiv {
+  white-space: nowrap; /* Prevent banner content from wrapping */
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar {
+  display: flex;
+  padding: 10px 16px;
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar span {
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar .categoryMenu span {
+  margin-right: 16px;
+  font-weight: bolder;
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions {
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span {
+  padding: 10px;
+}
+
+.bannerChildDiv .banner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bannerChildDiv .banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for screens smaller than 700px */
+@media only screen and (max-width: 700px) {
+  .bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions {
+    display: none;
+  }
+
+  .bannerParentDiv {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+  }
+}

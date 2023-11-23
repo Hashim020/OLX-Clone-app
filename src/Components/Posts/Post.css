@@ -1,0 +1,112 @@
+/* Container for the product cards */
+.moreView {
+  margin: 16px 16px 24px;
+  padding: 16px 16px 32px;
+  background-color: #ebeeef;
+  border-radius: 4px;
+}
+
+/* Heading for the product section */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Main heading (product category, for example) */
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+}
+
+/* Subheading (optional) */
+.heading :last-child {
+  font-size: 14px;
+  color: #002f34;
+}
+
+/* Container for the product cards */
+.recommendations .cards {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent cards from wrapping to the next line */
+}
+
+/* Styling for individual product cards */
+.card {
+  margin-right: 15px;
+  padding: 13px;
+  width: 222px;
+  height: 300px; /* Increased the height to provide more space for content */
+  border-radius: 4px;
+  background-color: white; /* Set a background color for cards */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden; /* Hide content overflow */
+}
+
+/* Container for the favorite icon */
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Container for the product image */
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Adjusted image container height */
+}
+
+/* Product image */
+.card .image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Keep image aspect ratio and center it */
+}
+
+/* Container for product details */
+.card .content {
+  padding: 10px;
+}
+
+/* Product rating */
+.card .content .rate {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px; /* Adjusted spacing */
+}
+
+/* Kilometer or distance */
+.card .content .kilometer {
+  font-size: 14px;
+  color: #777; /* A subdued color for additional information */
+}
+
+/* Product name */
+.card .content .name {
+  font-size: 14px;
+  margin-top: 6px; /* Adjusted spacing */
+}
+
+/* Date or other information */
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px; /* Smaller font size for additional information */
+}
+
+/* Styling for the recommendations section */
+.recommendations {
+  margin: 16px 16px 24px;
+}
+
+/* Recommendations heading */
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+}

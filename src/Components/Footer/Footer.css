@@ -1,0 +1,40 @@
+/* Footer styles */
+.footerParentDiv {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.footerParentDiv .content {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  background: #ebeeef;
+  padding: 16px;
+  white-space: nowrap; /* Prevent content from wrapping on larger screens */
+}
+
+.footerParentDiv .content .heading {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.footerParentDiv .footer {
+  display: flex;
+  flex-wrap: wrap; /* Allow footer content to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #002f34;
+  color: whitesmoke;
+  white-space: nowrap; /* Prevent footer content from wrapping on larger screens */
+}
+
+.footerParentDiv .footer p {
+  margin: 0;
+}
+
+/* Media query for screens smaller than 700px */
+@media only screen and (max-width: 700px) {
+  /* If needed, adjust styles for smaller screens here */
+}
